@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Join Chat Room</h2>
+        <input type="text" id="username" placeholder="Enter Name">
+        <input type="text" id="room" placeholder="Enter Room">
+        <button onclick="joinChat()">Join</button>
+    </div>
+
+    <div class="chat-container" id="chatBox" style="display: none;">
+        <div class="chat-header">
+            <h3 id="roomTitle"></h3>
+            <button onclick="leaveChat()">Leave</button>
+        </div>
+        <div id="messages"></div>
+        <div class="chat-input">
+            <input id="message" type="text" placeholder="Type a message..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
