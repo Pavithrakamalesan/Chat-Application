@@ -22,7 +22,6 @@ This is a **real-time chat application** built using **Socket.io**, **Node.js**,
 - **Real-time messaging** with instant message delivery.  
 - **Full-screen responsive UI** for an immersive experience.  
 - **Dynamic user-specific message colors** for easy differentiation.  
-- **Fixed chat input box at the bottom** for seamless chatting.  
 - **System messages** when users join or leave the chat.  
 - **Timestamps on messages** with a small and subtle display.  
 - **Smooth animations and a modern UI design.**  
